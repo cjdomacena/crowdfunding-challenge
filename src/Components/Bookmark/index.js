@@ -1,7 +1,7 @@
 import React from 'react'
 import { ThemeProvider } from 'styled-components'
 import { theme } from '../Theme.js'
-import { Bookmark } from './Bookmark.style.js'
+import { Bookmark } from './Bookmark.style'
 
 const index = () => {
     return (

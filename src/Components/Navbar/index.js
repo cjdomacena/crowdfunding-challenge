@@ -4,6 +4,8 @@ import { Navbar, NavBrand, NavItems, NavLink, IconHamburger } from './Navbar.sty
 
 import { ThemeProvider } from 'styled-components';
 import { theme } from './../Theme';
+
+// TODO -- Implement isOpen fuctionality.
 const index = ({ isOpen }) => {
 	return (
 		<ThemeProvider theme={theme}>

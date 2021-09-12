@@ -19,8 +19,5 @@ span
     color: ${props => props.theme.colors.neutral.darkGray};
 }
 margin: 0 auto;
-svg
-{
-
-}
+cursor: pointer;
 `
