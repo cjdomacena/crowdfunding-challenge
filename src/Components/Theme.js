@@ -1,7 +1,7 @@
 export const theme = {
 
         font: {
-            primary: "'Commissioner', sans-serif;",
+            primary: "'Commissioner', sans-serif",
             fontWeight: {
                 "normal": 400,
                 "medium": 500,
