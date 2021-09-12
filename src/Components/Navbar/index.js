@@ -1,13 +1,13 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import { Navbar, NavBrand, NavItems, NavLink } from './Navbar.style';
+import { Navbar, NavBrand, NavItems, NavLink, IconHamburger } from './Navbar.style';
 
 import { ThemeProvider } from 'styled-components';
-import {theme} from './../Theme'
-const index = () => {
+import { theme } from './../Theme';
+const index = ({ isOpen }) => {
 	return (
 		<ThemeProvider theme={theme}>
-			<Container>
+			<Container fluid>
 				<Navbar>
 					<NavBrand>
 						<svg width="128" height="20" xmlns="http://www.w3.org/2000/svg">
@@ -23,7 +23,29 @@ const index = () => {
 						<NavLink>Discover</NavLink>
 						<NavLink>Get Started</NavLink>
 					</NavItems>
+					<IconHamburger>
+						{!isOpen
+						// If isOpen == false  
+						? (
+							<svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
+								<g fill="#FFF" fill-rule="evenodd">
+									<path d="M0 0h16v3H0zM0 6h16v3H0zM0 12h16v3H0z" />
+								</g>
+							</svg>
+						) 
+						// If isOpen == true (If user clicks Menu)
+						: 
+						(
+							<svg width="14" height="15" xmlns="http://www.w3.org/2000/svg">
+								<g fill="#FFF" fill-rule="evenodd">
+									<path d="M2.404.782l11.314 11.314-2.122 2.122L.282 2.904z" />
+									<path d="M.282 12.096L11.596.782l2.122 2.122L2.404 14.218z" />
+								</g>
+							</svg>
+						)}
+					</IconHamburger>
 				</Navbar>
+			
 			</Container>
 		</ThemeProvider>
 	);
