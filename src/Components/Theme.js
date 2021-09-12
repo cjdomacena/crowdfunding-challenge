@@ -13,7 +13,7 @@ export const theme = {
                moderateCyan: 'hsl(176, 50%, 47%)',
                darkCyan: 'hsl(176, 72%, 28%)'
            },
-           nuetral: {
+           neutral: {
                black: 'hsl(0, 0%, 0%)',
                darkGray: 'hsl(0, 0%, 48%)'
            }

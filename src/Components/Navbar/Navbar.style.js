@@ -15,6 +15,7 @@ export const NavBrand = styled.div``
 
 export const NavItems = styled.ul`
 display:flex;
+align-items: center;
 @media screen and (max-width: 780px)
 {
     display: none;
