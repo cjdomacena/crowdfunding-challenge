@@ -3,7 +3,10 @@ import { ThemeProvider } from 'styled-components'
 import { theme } from '../Theme.js'
 import { Bookmark } from './Bookmark.style'
 
+// TODO -- Add active states.
+
 const index = () => {
+    
     return (
         <ThemeProvider theme={theme}>
             <Bookmark>
