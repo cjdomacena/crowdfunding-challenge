@@ -3,9 +3,9 @@ export const theme = {
         font: {
             primary: "'Commissioner', sans-serif",
             fontWeight: {
-                "normal": 400,
-                "medium": 500,
-                "bold": 700
+                normal: 400,
+                medium: 500,
+                bold: 700
             }
         },
         colors: {
