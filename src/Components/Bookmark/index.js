@@ -4,7 +4,6 @@ import { ThemeProvider } from 'styled-components';
 import { theme } from '../Theme.js';
 import { Bookmark } from './Bookmark.style';
 
-// TODO -- Add active states.
 
 const Bookmarked = () => {
 	const [ active, setActive ] = useState(false);
